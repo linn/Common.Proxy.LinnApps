@@ -5,7 +5,7 @@
 
     using Linn.Common.Domain.LinnApps.Services;
 
-    using global::Oracle.ManagedDataAccess.Client;
+    using Oracle.ManagedDataAccess.Client;
 
     public class BartenderLabelPack : ILabelPrinter
     {
