@@ -9,7 +9,8 @@
 
     public class BartenderLabelPack : ILabelPrinter
     {
-        public async Task<(bool Success, string Message)> PrintLabelsAsync(string fileName, string printer, int qty, string template, string data)
+        public async Task<(bool Success, string Message)> PrintLabelsAsync(
+            string fileName, string printer, int qty, string template, string data)
         {
             var connection = new OracleConnection(ConnectionStrings.ManagedConnectionString());
             var cmd = new OracleCommand("BARTENDER.PRINT_LABELS_WRAPPER", connection)
@@ -39,7 +40,10 @@
                         Value = printer
                     });
             cmd.Parameters.Add(
-                new OracleParameter("p_qty", OracleDbType.Int32) { Direction = ParameterDirection.Input, Value = qty });
+                new OracleParameter("p_qty", OracleDbType.Int32)
+                    {
+                        Direction = ParameterDirection.Input, Value = qty
+                    });
             cmd.Parameters.Add(
                 new OracleParameter("p_template", OracleDbType.Varchar2)
                     {
