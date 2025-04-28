@@ -4,7 +4,7 @@
 ### Changes
 - target .net9.0
 - directory restructure
-- also moved this .nupkg to its own github repo. Just a evelopers note since this won't have any effect on users of the package.
+- also moved this .nupkg to its own github repo. Just a developers note since this won't have any effect on users of the package.
 
 ## [3.0.0] - 2021-10-21
 ### Changes
