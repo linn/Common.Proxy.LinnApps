@@ -9,7 +9,7 @@ if [ "${TRAVIS_BRANCH}" = "main" ]; then
     dotnet restore src
     dotnet pack -c Release src
 
-    PACKAGE_PATH=src/bin/Release/Linn.Common.Proxy.Linnapps.2.0.0.nupkg
+    PACKAGE_PATH=src/bin/Release/Linn.Common.Proxy.Linnapps.*.nupkg
 
     dotnet nuget push "$PACKAGE_PATH" \
       --api-key "$NUGET_API_KEY" \

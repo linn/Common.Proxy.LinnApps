@@ -9,6 +9,6 @@
 		<ItemGroup>
     	<PackageReference Include="Linn.Common.Configuration" Version="2.0.0" />
     	<PackageReference Include="Linn.Common.Domain.LinnApps" Version="2.0.0" />
-    	<PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.90" />
+    	<PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.160" />
   </ItemGroup>
 </Project>
