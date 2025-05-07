@@ -1,5 +1,9 @@
 
 # Changelog
+## [4.1.0] - 2025-05-07
+### Changes
+- Add ASync overloads to IDatabaseService methods
+
 ## [4.0.0] - 2025-04-28
 ### Changes
 - target .net9.0
